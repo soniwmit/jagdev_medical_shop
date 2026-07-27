@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --med-blue: #0F52BA;
+    --med-blue-dark: #0A3A86;
+    --med-green: #0A8F6A;
+    --med-green-dark: #07684D;
+  }
+}
+
+.bg-med-blue {
+  background-color: var(--med-blue);
+}
+
+.bg-med-green {
+  background-color: var(--med-green);
+}
+
+.text-med-blue {
+  color: var(--med-blue);
+}
+
+.text-med-green {
+  color: var(--med-green);
+}
+
+.border-med-blue {
+  border-color: var(--med-blue);
+}
+
+.border-med-green {
+  border-color: var(--med-green);
+}
+
+.medical-shadow {
+  box-shadow: 0 10px 25px -5px rgba(15, 82, 186, 0.12), 0 8px 10px -6px rgba(15, 82, 186, 0.08);
+}
+
+.medical-shadow-green {
+  box-shadow: 0 10px 25px -5px rgba(10, 143, 106, 0.25), 0 8px 10px -6px rgba(10, 143, 106, 0.15);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass-effect {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
