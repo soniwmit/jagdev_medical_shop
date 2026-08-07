@@ -11,7 +11,7 @@ interface SeoMetaProps {
 export const SeoMeta: React.FC<SeoMetaProps> = ({
   title = 'Jagdev Medical Shop | Medical Store in Shakurabad, Bihar',
   description = 'Jagdev Medical Shop - Your Trusted Pharmacy in Shakurabad, Bihar 804425. Genuine medicines, surgical supplies, baby care, diabetic care & 24/7 WhatsApp order support.',
-  canonicalUrl = 'https://jagdevmedical.com',
+  canonicalUrl = 'https://jagdev-medical-shop-navy.vercel.app',
   currentPage = 'Home',
 }) => {
   useEffect(() => {
@@ -33,7 +33,7 @@ export const SeoMeta: React.FC<SeoMetaProps> = ({
       '@type': 'Pharmacy',
       name: BUSINESS_INFO.name,
       description: description,
-      image: 'https://jagdevmedical.com/store-front.jpg',
+      image: 'https://jagdev-medical-shop-navy.vercel.app/store-front.jpg',
       telephone: BUSINESS_INFO.phone,
       email: BUSINESS_INFO.email,
       url: canonicalUrl,
@@ -94,7 +94,7 @@ export const SeoMeta: React.FC<SeoMetaProps> = ({
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://jagdevmedical.com',
+          item: 'https://jagdev-medical-shop-navy.vercel.app',
         },
         {
           '@type': 'ListItem',

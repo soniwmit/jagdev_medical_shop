@@ -135,7 +135,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentPage, openWhatsAppModa
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
-          <p>© {new Date().getFullYear()} Jagdev Medical Shop. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Jagdev Medical Shop. All Rights Reserved. | <a href="#" className="wmit-popup-trigger hover:text-emerald-400 transition-colors" target="_blank" rel="noopener noreferrer">Developed by WMIT</a></p>
 
           <div className="flex flex-wrap items-center gap-6 uppercase tracking-wider text-[11px]">
             <button onClick={() => setModalType('privacy')} className="hover:text-white transition-colors">

@@ -13,6 +13,7 @@ import { AboutPage } from './pages/AboutPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { ContactPage } from './pages/ContactPage';
+import { useTracker } from './hooks/useTracker';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageType>('home');
@@ -20,6 +21,9 @@ export default function App() {
   const [whatsAppModalOpen, setWhatsAppModalOpen] = useState<boolean>(false);
   const [searchModalOpen, setSearchModalOpen] = useState<boolean>(false);
   const [initialMedicine, setInitialMedicine] = useState<string>('');
+
+  // Global SPA page tracking
+  useTracker(currentPage);
 
   // Handle Dark Mode toggling
   useEffect(() => {
